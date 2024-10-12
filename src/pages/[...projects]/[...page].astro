@@ -11,7 +11,9 @@ import { fetchProjects } from '~/utils/project';
 import { PROJECTS_BASE } from '~/utils/permalinks';
 
 export async function getStaticPaths({ paginate }: any) {
-  if (PROJECTS?.disabled || PROJECTS?.list?.disabled) return [];
+  if (PROJECTS?.disabled || PROJECTS?.list?.disabled) {
+    return [];
+  }
   return paginate(await fetchProjects(), {
     params: { projects: PROJECTS_BASE || undefined },
     pageSize: PROJECTS.itemPerPage,

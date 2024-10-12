@@ -10,9 +10,12 @@ import { TAG_BASE } from '~/utils/permalinks';
 import Headline from '~/components/project/Headline.astro';
 
 export async function getStaticPaths({ paginate }: any) {
-  if (PROJECTS?.disabled || PROJECTS?.tag?.disabled) return [];
+  if (PROJECTS?.disabled || PROJECTS?.tag?.disabled) {
+    return [];
+  }
 
   const projects = await fetchProjects();
+
   const tags = new Set();
   projects.map((project) => {
     Array.isArray(project.tags) && project.tags.map((tag) => tags.add(tag.toLowerCase()));

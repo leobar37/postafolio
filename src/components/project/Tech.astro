@@ -1,0 +1,21 @@
+---
+export type Props = {
+  tech: string[];
+};
+
+const { tech } = Astro.props;
+---
+
+<h4>
+  <span class="text-muted">Tecnologias:</span>
+</h4>
+
+{
+  tech && Array.isArray(tech) && (
+    <ul class="flex flex-wrap gap-2">
+      {tech.map((tag) => (
+        <li class="badge-tag lowercase font-medium">{tag}</li>
+      ))}
+    </ul>
+  )
+}

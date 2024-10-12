@@ -5,13 +5,11 @@ const project = defineCollection({
     title: z.string(),
     description: z.string().optional(),
     github: z.string().optional(),
-
+    tech: z.array(z.string()).optional(),
     image: z.string().optional(),
     video: z.string().optional(),
-
     publishDate: z.date().or(z.string()).optional(),
     draft: z.boolean().optional(),
-
     excerpt: z.string().optional(),
     category: z.string().optional(),
     tags: z.array(z.string()).optional(),

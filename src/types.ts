@@ -152,6 +152,7 @@ export interface Project {
   id: string;
   slug: string;
 
+  tech?: Array<string>;
   publishDate: Date;
   title: string;
   description?: string;

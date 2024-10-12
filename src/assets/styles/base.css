@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+  --aw-color-primary: red;
+  --aw-color-secondary: #ffed4a;
+  --aw-color-accent: #e3342f;
+}
+
+
 @layer components {
   .text-page {
     color: var(--aw-color-text-page);

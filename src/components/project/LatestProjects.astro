@@ -15,9 +15,9 @@ export interface Props {
 
 const {
   title = await Astro.slots.render('title'),
-  allProjectsText = 'View all projects',
+  allProjectsText = 'Ver todos los proyectos',
   allProjectsLink = getProjectsPermalink(),
-  information = await Astro.slots.render('information'),
+  information = await Astro.slots.render('Información'),
   count = 4,
   projectIds = Astro.props.projectIds,
 } = Astro.props;

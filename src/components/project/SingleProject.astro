@@ -4,6 +4,7 @@ import { Icon } from 'astro-icon';
 import { Picture } from '@astrojs/image/components';
 
 import ProjectTags from '~/components/project/Tags.astro';
+import Tech from '~/components/project/Tech.astro';
 import SocialShare from '~/components/common/SocialShare.astro';
 
 import { getPermalink } from '~/utils/permalinks';
@@ -56,7 +57,7 @@ const { project, url } = Astro.props;
           <p class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-l md:text-xl text-muted highlight-link text-justify">
             <a href={project.github}>
               <Icon name="tabler:brand-github" class="w-5 h-5 inline-block -mt-0.5 " />
-              Check out the GitHub page for open issues or downlads
+              Github
             </a>
           </p>
         )
@@ -121,12 +122,14 @@ const { project, url } = Astro.props;
       }
 
       {project.Content ? <project.Content /> : <Fragment set:html={project.content} />}
+      <Tech tech={project.tech ?? []} />
 
       <hr style="margin-top: 2rem" class="border-primary border-t-8" />
     </div>
 
     <div class="mx-auto px-6 sm:px-6 max-w-3xl mt-8 flex justify-between flex-col sm:flex-row">
       <ProjectTags tags={project.tags} class="mr-5" />
+
       <SocialShare url={url} text={project.title} class="mt-5 sm:mt-1 align-middle text-gray-500 dark:text-slate-600" />
     </div>
   </article>

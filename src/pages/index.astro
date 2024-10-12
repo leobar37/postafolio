@@ -19,50 +19,27 @@ const meta = {
 
 <Layout {meta}>
   <Hero
-    callToAction={{
-      icon: 'tabler:rocket',
-      text: 'Donate',
-      tooltip: "Tell me you're from this site if you do so!",
-      href: '#donate',
-    }}
     callToAction2={{
       icon: 'tabler:braces',
-      text: 'Programming Projects',
+      text: 'Proyectos',
       href: getPermalink('/projects'),
     }}
   >
     <Fragment slot="title">
-      Hi there! I'm <span class="highlight"> Martin</span>
+      Hola soy <span class="highlight"> Elmer</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="sm:inline">
         <!-- Continue title -->
-        also known as <span class="font-semibold highlight">MartinFX</span>
-        or <span class="font-semibold highlight" title="Formerly RatinA0">RatinFX</span>.
+        Tambien llamado<span class="font-semibold highlight"> Leobar</span>.
         <br />
         <br />
-
-        <!-- Lyric videos -->
-        You might know me for creating YouTube videos like
-        <a
-          class="font-semibold highlight-link"
-          href="https://www.youtube.com/watch?v=h-mUGj41hWA"
-          title="Over 18M views!"
-        >
-          NOMA - Brain Power | LYRICS!
-        </a>
-
-        <!-- Work -->
-        <br />
-        I'm also a <span class="font-semibold">software developer</span> who created
-        <span class="font-semibold">extensions</span> for
-        <span class="font-semibold"> VEGAS Pro</span>, some being open-source on my GitHub page.
       </span>
     </Fragment>
   </Hero>
 
-  <LatestProjects title="Latest Projects" />
+  <LatestProjects title="Ultimos proyectos" />
 
   <Features2 title="Experience" id="experience" items={experience} />
 

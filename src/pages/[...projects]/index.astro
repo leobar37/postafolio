@@ -11,7 +11,9 @@ import { fetchProjects } from '~/utils/project';
 import { findImage } from '~/utils/images';
 
 export async function getStaticPaths() {
-  if (PROJECTS?.disabled || PROJECTS?.project?.disabled) return [];
+  if (PROJECTS?.disabled || PROJECTS?.project?.disabled) {
+    return [];
+  }
 
   return (await fetchProjects()).map((project) => ({
     params: {

@@ -1,48 +1,17 @@
 ---
 import CallToAction from '../widgets/CallToAction.astro';
 
-const supportSubtitle =
-  'If you enjoy my work, please consider showing your support by following or donating! ' +
-  'Your contribution can make a significant difference.';
-
 const contactSubtitle =
-  'Have some feedback, question, or commission?</br> ' +
-  'Contact me <span class="highlight">through my <b>Socials</b></span> or email me ' +
-  '- most active on <span class="highlight">Discord</span>';
+  '¿Tienes algún comentario, pregunta o propuesta?</br> ' +
+  'Contáctame <span class="highlight">a través de mis <b>Redes Sociales</b></span> o envíame un correo electrónico';
 ---
 
 <CallToAction
-  id="donate"
-  title="Support my work"
-  subtitle={supportSubtitle}
-  callToAction={{
-    icon: 'tabler:rocket',
-    text: 'Streamlabs',
-    tooltip: 'This WILL show up on livestreams!',
-    href: 'https://streamlabs.com/RatinFX/tip',
-    openOnNewTab: true,
-  }}
-  callToAction2={{
-    icon: 'tabler:coffee',
-    text: 'Ko-fi',
-    tooltip: 'This will NOT show up on livestreams!',
-    href: 'https://ko-fi.com/RatinFX',
-    openOnNewTab: true,
-  }}
-  isCTA2Primary={true}
-/>
-
-<CallToAction
-  title="Contact me"
+  title="Contacta conmigo"
   subtitle={contactSubtitle}
-  callToAction={{
-    icon: 'tabler:brand-discord',
-    text: 'Discord',
-    href: 'https://discord.gg/3Quqz28',
-  }}
   callToAction2={{
     icon: 'tabler:at',
-    text: 'martindotwork@gmail.com',
-    href: 'mailto:martindotwork@gmail.com',
+    text: 'leonbarbozaelmerjoselito@gmail.com',
+    href: 'mailto:leonbarbozaelmerjoselito@gmail.com',
   }}
 />

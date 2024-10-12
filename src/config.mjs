@@ -1,19 +1,18 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'RatinFX',
-
-  origin: 'https://ratinfx.github.com',
+  name: 'Leobar',
+  origin: 'https://github.com/leobar37',
   basePathname: '/',
   trailingSlash: false,
 
   title: 'Portfolio',
-  description: 'Software developer, beginner animator and YouTube creator',
+  description: 'Software Developer',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
-  language: 'en',
+  language: 'es',
   textDirection: 'ltr',
 
   dateFormatter: new Intl.DateTimeFormat('en', {

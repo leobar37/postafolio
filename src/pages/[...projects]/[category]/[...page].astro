@@ -10,8 +10,9 @@ import { fetchProjects } from '~/utils/project';
 import { CATEGORY_BASE } from '~/utils/permalinks';
 
 export async function getStaticPaths({ paginate }: any) {
-  if (PROJECTS?.disabled || PROJECTS?.category?.disabled) return [];
-
+  if (PROJECTS?.disabled || PROJECTS?.category?.disabled) {
+    return [];
+  }
   const projects = await fetchProjects();
   const categories = new Set();
   projects.map((project) => {

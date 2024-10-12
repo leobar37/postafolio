@@ -16,21 +16,23 @@ export enum VPProjectType {
 export enum ProjectSlugs {
   Unknown = 'Unknown',
   CustomFades = 'custom-fades',
-  ShortenExtendMedia = 'shorten-extend-media',
+  SmartFood = 'smart-food',
   BetterSearch = 'better-search',
-  VPFlow = 'vegas-pro-flow',
-  VPConsole = 'vpconsole',
-  VPExtensionManager = 'vpem',
+  Roesba = 'roesba',
+  Leobit = 'leobit',
+  WelnessProAdminitration = 'Wellness-pro-adminitration',
+  WellnessSlug = 'wellness-gym-administrator',
 }
 
 export enum ProjectNames {
   Unknown = 'Unknown',
   CustomFades = 'CustomFades',
-  ShortenExtendMedia = 'ShortenExtendMedia',
+  SmartFood = 'SmartFood',
   BetterSearch = 'BetterSearch',
-  VPFlow = 'VegasProFlow',
-  VPConsole = 'VPConsole',
-  VPExtensionManager = 'VPExtensionManager',
+  Roesba = 'Roesba',
+  Leobit = 'Leobit',
+  WellnessProAdministration = 'Wellness Pro',
+  WellnessSlug = 'WellnessAdministrator',
 }
 
 export enum ShortProjectNames {

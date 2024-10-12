@@ -1,92 +1,60 @@
-import { vpflow, vpem, vpconsole, customFades, shortenExtendMedia } from './content/projectVersions';
+import { roesba, welnessAdministration, leobit, smartFood } from './content/projectVersions';
 import type { FeatureItem2, FooterProps, HeaderProps, Link } from './types';
 import { getPermalink, getProjectsPermalink } from './utils/permalinks';
 
 const projects: Link[] = [
   {
-    text: vpem.displayName,
-    href: getPermalink('/' + vpem.slug),
+    text: welnessAdministration.displayName,
+    href: getPermalink('/' + welnessAdministration.slug),
   },
   {
-    text: vpconsole.displayName,
-    href: getPermalink('/' + vpconsole.slug),
+    text: leobit.displayName,
+    href: getPermalink('/' + leobit.slug),
   },
   {
-    text: vpflow.displayName,
-    href: getPermalink('/' + vpflow.slug),
+    text: roesba.displayName,
+    href: getPermalink('/' + roesba.slug),
   },
   {
-    text: shortenExtendMedia.displayName,
-    href: getPermalink('/' + shortenExtendMedia.slug),
-  },
-  {
-    text: customFades.displayName,
-    href: getPermalink('/' + customFades.slug),
-  },
-  {
-    text: 'GitHub Pages',
-    href: 'https://github.com/RatinFX/ratinfx.github.io',
+    text: smartFood.displayName,
+    href: getPermalink('/' + smartFood.slug),
   },
 ];
 
 const socials: Link[] = [
   {
-    text: 'Discord server',
-    ariaLabel: 'Discord server',
-    icon: 'tabler:brand-discord',
-    href: 'https://discord.gg/3Quqz28',
-  },
-  {
-    text: 'Twitch',
-    ariaLabel: 'Twitch',
-    icon: 'tabler:brand-twitch',
-    href: 'https://www.twitch.tv/RatinFX',
-  },
-  {
-    text: 'Main YouTube',
-    ariaLabel: 'Main YouTube',
+    text: 'YouTube',
+    ariaLabel: 'YouTube',
     icon: 'tabler:brand-youtube',
-    href: 'https://youtube.com/@MartinFX?sub_confirmation=1',
-  },
-  {
-    text: 'Second YouTube',
-    ariaLabel: 'Second YouTube',
-    icon: 'tabler:brand-youtube',
-    href: 'https://youtube.com/@RatinFX?sub_confirmation=1',
+    href: 'https://www.youtube.com/@leobar3787',
   },
   {
     text: 'Twitter',
     ariaLabel: 'Twitter',
     icon: 'tabler:brand-twitter',
-    href: 'https://twitter.com/RatinFX',
-  },
-  {
-    text: 'Instagram',
-    ariaLabel: 'Instagram',
-    icon: 'tabler:brand-instagram',
-    href: 'https://www.instagram.com/RatnFX',
+    href: 'https://x.com/elmer_joselito',
   },
   {
     text: 'GitHub',
     ariaLabel: 'GitHub',
     icon: 'tabler:brand-github',
-    href: 'https://github.com/RatinFX?tab=repositories',
+    href: 'https://github.com/leobar37?tab=repositories',
   },
 ];
 
 export const headerData: HeaderProps = {
   links: [
     {
-      text: 'Experience',
+      text: 'Experiencia',
       href: getPermalink('#experience'),
     },
     {
-      text: 'Projects',
+      text: 'Proyectos',
       href: getProjectsPermalink(),
       links: [...projects],
     },
     {
-      text: 'Socials',
+      text: 'Redes sociales',
       links: [...socials],
     },
   ],
@@ -95,90 +63,95 @@ export const headerData: HeaderProps = {
 export const experience: Array<FeatureItem2> = [
   {
     icon: 'tabler:3d-cube-sphere',
-    title: 'Unity Developer',
-    timeFrame: '2022. September - Present',
-    tags: ['Unity', 'C#', 'Firebase', 'TypeScript', 'Figma'],
+    title: 'NTT DATA: Senior Developer',
+    timeFrame: 'Jul, 2022 - Present',
+    tags: ['Node Js', 'React', 'Angular', 'Material', 'Tailwind'],
     description:
-      'I mostly worked on AR applications for Android and iOS using AR Foundation ' +
-      'while cleaning, correcting, and fixing up older code.' +
-      '<br/>' +
-      '<br/>' +
-      'I also created a Firebase Backend system with live data handling ' +
-      'and connected it with the proper Frontend components for another project.' +
-      '',
+      'NTT DATA Corporation es una multinacional japonesa de consultoría y servicios de tecnología de la información con sede en Tokio, Japón.' +
+      '<br/><br/>' +
+      'Funciones:<br/>' +
+      '- Se concluye con éxito la herramienta para construir formularios, desde una interfaz y a través de código.<br/>' +
+      '- Preparar talleres para capacitar al equipo.<br/>' +
+      '- Refactorización de código.<br/>' +
+      '- Participar en ceremonias SCRUM.<br/>' +
+      '- Construcción de interfaces con React y Angular.',
+    bottomLink: 'https://pe.nttdata.com/',
   },
   {
-    icon: 'vscode-icons:file-type-vue',
-    title: 'Full-stack Web Developer',
-    timeFrame: '2021. May - 2022. September',
-    tags: ['ASP.NET Core', 'C#', 'TypeScript', 'Vue.js 2', 'Vuetify', 'SQL'],
+    icon: 'tabler:vue',
+    title: 'Wetokie: Full Stack Developer',
+    timeFrame: 'Oct, 2022 - Ene, 2023',
+    tags: ['Rabbit MQ', 'NestJs', 'React', 'Redux', 'Swagger'],
     description:
-      'Used Vue.js 2 with TypeScript frontend and ASP.NET Core backend.' +
-      '<br/>' +
-      '<br/>' +
-      'I worked on:' +
-      '<br/>' +
-      '- Recreating pages from their older application' +
-      '<br/>' +
-      '- MediatR event handling' +
-      '<br/>' +
-      '- SignalR live communication' +
-      '<br/>' +
-      '- Basic Cypress E2E testing' +
-      '',
+      'Wetokie es una startup argentina para campañas que quieren financiar sus proyectos, dándole la oportunidad a cualquier persona de invertir de manera segura.' +
+      '<br/><br/>' +
+      'Funciones:<br/>' +
+      '- Plantear soluciones backend basadas en microservicios y NestJS.<br/>' +
+      '- Participar en ceremonias SCRUM.<br/>' +
+      '- Implementar funcionalidades frontend con React.<br/>' +
+      '- Plantear una arquitectura modular del lado del backend.',
+    bottomLink: 'https://wetokie.io/',
   },
   {
-    icon: 'flat-color-icons:home',
-    title: 'Own projects',
-    tags: ['C#', 'WinForms', 'WPF', 'VEGAS Pro', 'Astro'],
+    icon: 'tabler:3d-cube-sphere',
+    title: 'Dynamic Devs: Software Engineer II',
+    timeFrame: 'Nov, 2021 - Mayo, 2022',
+    tags: ['AWS Lambda', 'NestJS', 'Redux', 'React', 'Material UI'],
     description:
-      'I mainly focused on creating VEGAS Pro Extensions ' +
-      "to help out and speed up my own, and my friends' work " +
-      'while broadening my programming knowledge.' +
-      '',
-    bottomLink: 'https://github.com/RatinFX',
-    bottomLinkText: 'GitHub repositories',
+      'Funciones:<br/>' +
+      '- Desarrollo de aplicaciones SPA y SSR con React, Next.js y TypeScript.<br/>' +
+      '- Creación de componentes reutilizables.<br/>' +
+      '- Implementación de SEO.<br/>' +
+      '- Desarrollo de interfaces siguiendo Pixel Perfect.<br/>' +
+      '- Participación en la construcción de lambdas en AWS con Node.js y TypeScript.' +
+      '<br/><br/>' +
+      'Proyectos:<br/>' +
+      '- Migración web RIMAC: Cambio de CMS con nueva arquitectura y tecnologías.<br/>' +
+      '- SPA ARCOPRIME: Sistema de inventario completamente Client Side con arquitectura modular basada en TypeScript y React.',
+    bottomLink: 'https://www.dynamicdevs.io/',
   },
   {
-    icon: 'twemoji:red-circle',
-    title: 'osu!',
-    timeFrame: '2013 - Present',
-    tags: ['osu!', 'Level design', 'Video game', 'C#'],
+    icon: 'logos:angular-icon',
+    title: 'Vide Solutions: Full Stack Developer',
+    timeFrame: 'Ago, 2019 - Present',
+    tags: ['React', 'Redux', 'Node.js'],
     description:
-      '<a class="highlight-link" href="https://osu.ppy.sh/home">osu!</a> is a rhythm game. ' +
-      '<br/>' +
-      'Alongside becoming a former top #1000 player, I created many playable maps, ' +
-      'some of which became officially featured content of the game.' +
-      '<br/>' +
-      '<br/>' +
-      'I also started looking into and contributing to its open source version ' +
-      "called <a class='highlight-link' href='https://github.com/ppy/osu'>osu!lazer</a>." +
-      '',
-    bottomLink: 'https://osu.ppy.sh/users/3436625',
-    bottomLinkText: 'osu! profile',
+      'Vide Solutions es una startup que brinda servicios de TI.' +
+      '<br/><br/>' +
+      'Funciones:<br/>' +
+      '- Liderar pequeños equipos.<br/>' +
+      '- Planificar ceremonias SCRUM.<br/>' +
+      '- Ayudar en el planteamiento de soluciones para clientes.' +
+      '<br/><br/>' +
+      'Proyectos:<br/>' +
+      '- Zoomlion: Página web para Latinoamérica.<br/>' +
+      '- Consultora Sierra Bravia: Refactorización de proyectos.<br/>' +
+      '- Capsil: Ecommerce de café.',
   },
   {
-    icon: 'logos:youtube-icon',
-    title: 'Video Collaborations',
-    timeFrame: '2016 - Present',
-    tags: ['VEGAS Pro', 'After Effects', 'Premiere Pro', 'Photoshop'],
+    icon: 'tabler:3d-cube-sphere',
+    title: 'Tibó: Senior Full Stack Developer',
+    timeFrame: 'Marzo 2024 - Agosto 2024',
+    tags: ['NestJs', 'Angular', 'React'],
     description:
-      'I have been involved in organizing and participating' +
-      'in video collaborations with more than 25 individuals.' +
-      '',
-    bottomLink: 'https://www.youtube.com/playlist?list=PLbWOgfpY-MeAEQ-baK9VAi_c6KFlqaMye',
-    bottomLinkText: 'Playlist of related videos',
+      'Tibó es una herramienta digital todo en uno para que los mayoristas de alimentos gestionen mejor su negocio.' +
+      '<br/><br/>' +
+      'Funciones:<br/>' +
+      '- Microservicios en Nest.js.<br/>' +
+      '- Construcción de interfaces con Angular.<br/>' +
+      '- Construcción de interfaces en React.',
+    bottomLink: 'https://tiboapp.com/',
   },
 ];
 
 export const footerData: FooterProps = {
   links: [
     {
-      title: 'Projects',
+      title: 'Projectos',
       links: [...projects],
     },
     {
-      title: 'Socials',
+      title: 'Social',
       links: [...socials],
     },
   ],
