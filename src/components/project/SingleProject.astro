@@ -100,21 +100,21 @@ const { project, url } = Astro.props;
       {
         project.projectDetails && (project.projectDetails.hasPrimary() || project.projectDetails.hasSecondary()) && (
           <>
-            {project?.tags && <HowToInstall tags={project.tags} />}
+            {/* {project?.tags && <HowToInstall tags={project.tags} />} */}
 
-            <h2 id="latest-version">Latest version</h2>
-            <ProjectRelease projectDetails={project.projectDetails} boxClasses={'bg-slate-100 dark:bg-slate-800'} />
+            {/* <h2 id="latest-version">Latest version</h2> */}
+            {/* <ProjectRelease projectDetails={project.projectDetails} boxClasses={'bg-slate-100 dark:bg-slate-800'} /> */}
 
-            {project.github && (
+            {/* {project.github && (
               <>
                 <h2 id="older-versions">Older versions</h2>
-
+s
                 <a href={project.github}>
                   <Icon name="tabler:brand-github" class="w-5 h-5 inline-block -mt-0.5 " />
                   You can find older versions on the GitHub page
                 </a>
               </>
-            )}
+            )} */}
 
             <hr style="margin-top: 2rem" class="border-primary border-t-8" />
           </>

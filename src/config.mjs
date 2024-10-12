@@ -5,8 +5,7 @@ const CONFIG = {
   origin: 'https://github.com/leobar37',
   basePathname: '/',
   trailingSlash: false,
-
-  title: 'Portfolio',
+  title: 'Leobar',
   description: 'Software Developer',
   defaultImage: defaultImage,
 

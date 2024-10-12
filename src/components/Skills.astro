@@ -1,0 +1,58 @@
+---
+import { Cloud } from 'lucide-react';
+import {
+  SiAmazon,
+  SiAngular,
+  SiAstro,
+  SiCss3,
+  SiDocker,
+  SiHtml5,
+  SiJavascript,
+  SiNestjs,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiReact,
+  SiServerless,
+  SiTailwindcss,
+  SiTypeorm,
+  SiTypescript,
+} from 'react-icons/si';
+
+const skills = [
+  { name: 'HTML', icon: SiHtml5, link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+  { name: 'CSS', icon: SiCss3, link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+  { name: 'JavaScript', icon: SiJavascript, link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+  { name: 'TypeScript', icon: SiTypescript, link: 'https://www.typescriptlang.org/' },
+  { name: 'React', icon: SiReact, link: 'https://reactjs.org/' },
+  { name: 'Angular', icon: SiAngular, link: 'https://angular.io/' },
+  { name: 'Next.js', icon: SiNextdotjs, link: 'https://nextjs.org/' },
+  { name: 'Nest.js', icon: SiNestjs, link: 'https://nestjs.com/' },
+  { name: 'Astro', icon: SiAstro, link: 'https://astro.build/' },
+  { name: 'Tailwind CSS', icon: SiTailwindcss, link: 'https://tailwindcss.com/' },
+  { name: 'AWS', icon: SiAmazon, link: 'https://aws.amazon.com/' },
+  { name: 'Lambdas', icon: SiServerless, link: 'https://www.serverless.com/' },
+  { name: 'Docker', icon: SiDocker, link: 'https://www.docker.com/' },
+  { name: 'Cloud', icon: Cloud, link: 'https://developer.mozilla.org/en-US/docs/Web/Cloud' }, // Replace with specific cloud provider link if needed
+  { name: 'PostgreSQL', icon: SiPostgresql, link: 'https://www.postgresql.org/' },
+  { name: 'TypeORM', icon: SiTypeorm, link: 'https://typeorm.io/' },
+  { name: 'Prisma', icon: SiPrisma, link: 'https://www.prisma.io/' },
+];
+---
+
+<div class="p-6 bg-gray-100 rounded-lg shadow-md max-w-3xl mx-auto">
+  <h2 class="text-2xl font-bold text-gray-700 mb-4">Mis Habilidades</h2>
+  <ul class="align-middle grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2">
+    {
+      skills.map((skill) => (
+        <a
+          href={skill.link}
+          class="flex cursor-pointer hover:scale-105 active:scale-95 transition-all items-center p-3 bg-white shadow-sm rounded-md hover:bg-gray-50 transition h-14"
+        >
+          <skill.icon className="w-6 h-6 text-blue-500 mr-3" />
+          <span class="text-gray-600 font-medium">{skill.name}</span>
+        </a>
+      ))
+    }
+  </ul>
+</div>

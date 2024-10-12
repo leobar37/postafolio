@@ -9,7 +9,9 @@ import Hero from '~/components/widgets/Hero.astro';
 import LatestProjects from '~/components/project/LatestProjects.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import SupportSection from '~/components/project/SupportSection.astro';
-
+import SkillsAstro from '~/components/Skills.astro';
+import Publications from '~/components/Publications.astro';
+import CvDownload from '~/components/cv.astro';
 const meta = {
   title: SITE.title,
   description: SITE.description,
@@ -39,9 +41,11 @@ const meta = {
     </Fragment>
   </Hero>
 
+  <SkillsAstro />
+  <Publications />
   <LatestProjects title="Ultimos proyectos" />
-
   <Features2 title="Experiencia" id="experience" items={experience} />
 
   <SupportSection id="donate" />
+  <CvDownload />
 </Layout>

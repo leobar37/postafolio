@@ -1,0 +1,76 @@
+---
+const posts = [
+  {
+    title: 'HOFs, Clousures y Callbacks para ser feliz en JavaScript',
+    description: 'Explora funciones de orden superior, closures y callbacks para mejorar tu manejo de JavaScript.',
+    link: 'https://medium.com/@leobar37/hofs-clousures-y-callbacks-para-ser-feliz-en-javascript-fa105ed6ad44',
+  },
+  {
+    title: 'Map y Set: Estructuras de datos',
+    description: 'Guía práctica sobre las estructuras de datos Map y Set en JavaScript.',
+    link: 'https://medium.com/@leobar37/map-y-set-estructuras-de-datos-fcb9cd39a59',
+  },
+  {
+    title: '¿Por qué React 18 llama dos veces a useEffect?',
+    description: 'Entiende el doble renderizado en React 18 y su impacto en useEffect.',
+    link: 'https://dev.to/leobar37/por-que-react-18-llama-dos-veces-a-useeffect-25bp',
+  },
+  {
+    title: 'Inmutabilidad',
+    description: 'Descubre los conceptos clave de la inmutabilidad en programación.',
+    link: 'https://dev.to/leobar37/inmutabilidad-3hc3',
+  },
+  {
+    title: 'Guía rápida de Redux (Parte 1)',
+    description: 'Una introducción rápida y concisa a Redux para manejar estados en React.',
+    link: 'https://dev.to/leobar37/guia-rapida-de-redux-p1-3i4p',
+  },
+  {
+    title: 'Patrón Observer (Parte 1)',
+    description: 'Entiende cómo implementar el patrón de diseño Observer en JavaScript.',
+    link: 'https://dev.to/leobar37/patron-observer-parte-1-1fbj',
+  },
+  {
+    title: 'Patrón Factory en TypeScript',
+    description: 'Aprende a usar el patrón Factory para la creación de objetos en TypeScript.',
+    link: 'https://dev.to/leobar37/patron-factory-en-typescript-2hbd',
+  },
+  {
+    title: 'Singleton en TypeScript',
+    description: 'Implementa el patrón Singleton en TypeScript para asegurar una única instancia.',
+    link: 'https://dev.to/leobar37/singlenton-en-typescript-53f1',
+  },
+  {
+    title: 'Decoradores en TypeScript (Parte 2)',
+    description: 'Segunda parte de la guía sobre decoradores en TypeScript, con ejemplos prácticos.',
+    link: 'https://dev.to/leobar37/decoradores-en-typescript-parte-2-5g4',
+  },
+  {
+    title: 'Introducción a React, Redux y Redux Toolkit',
+    description: 'Una guía introductoria a React, Redux y su integración con Redux Toolkit.',
+    link: 'https://dev.to/leobar37/introduccion-react-redux-y-redux-toolkit-4k63',
+  },
+];
+---
+
+<section class="max-w-7xl mx-auto px-4 mt-10">
+  <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8">Publicaciones</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {
+      posts.map((post) => (
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm transition hover:shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">{post.title}</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">{post.description}</p>
+          <a
+            href={post.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-500 dark:text-blue-400 font-medium hover:underline"
+          >
+            Leer más →
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</section>
