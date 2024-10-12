@@ -20,8 +20,8 @@ export enum ProjectSlugs {
   BetterSearch = 'better-search',
   Roesba = 'roesba',
   Leobit = 'leobit',
-  WelnessProAdminitration = 'Wellness-pro-adminitration',
-  WellnessSlug = 'wellness-gym-administrator',
+  WelnessProAdminitration = 'wellness-pro-administrator',
+  WellnessSlug = 'wellness-pro-administrator',
 }
 
 export enum ProjectNames {
