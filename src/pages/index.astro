@@ -11,8 +11,8 @@ import Features2 from '~/components/widgets/Features2.astro';
 import SupportSection from '~/components/project/SupportSection.astro';
 import SkillsAstro from '~/components/Skills.astro';
 import Publications from '~/components/Publications.astro';
-import CvDownload from '~/components/cv.astro';
-import { Folder } from "lucide-react";
+import CvDownload from '~/components/button_cv.astro';
+import { Folder } from 'lucide-react';
 const meta = {
   title: SITE.title,
   description: SITE.description,
@@ -28,14 +28,17 @@ const meta = {
       href: getPermalink('/projects'),
     }}
   >
-    <Fragment slot='call-to-action'>
+    <Fragment slot="call-to-action">
       <a
         href="/cv"
-        class="px-6 gap-x-2 flex items-center space-x-2 bg-blue-600 text-white font-medium rounded-full shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition"
+        class="px-6 py-3 hidden md:flex gap-x-2 items-center space-x-2 bg-blue-600 text-white font-medium rounded-full shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition"
       >
-      <Folder client:only="react" />
-      Cv
+        <Folder client:only="react" />
+        Cv
       </a>
+      <div class="block md:hidden">
+        <CvDownload />
+      </div>
     </Fragment>
     <Fragment slot="title">
       Hola soy <span class="highlight"> Elmer</span>

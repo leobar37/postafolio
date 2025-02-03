@@ -1,0 +1,13 @@
+---
+import { Download } from 'lucide-react';
+const cvLink = '/elmerjoselitonleonbarboza-senior-frontend.pdf';
+---
+
+<a
+  href={cvLink}
+  download
+  class="px-6 py-4 flex items-center justify-center space-x-2 bg-blue-600 text-white font-medium rounded-full shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition"
+>
+  <Download className="w-5 h-5" />
+  <span>Descargar CV</span>
+</a>
