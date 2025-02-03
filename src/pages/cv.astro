@@ -1,0 +1,27 @@
+---
+import { SITE } from '~/config.mjs';
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+import Layout from '~/layouts/PageLayout.astro';
+import PdfViwer from '~/components/PdfViwer';
+import { Download } from 'lucide-react';
+
+const cvLink = "/elmerjoselitonleonbarboza-senior-frontend.pdf";
+---
+
+<Layout {meta}>
+  <div class="flex justify-center my-4">
+    <a
+      href={cvLink}
+      download
+      class="px-6 py-3 flex items-center space-x-2 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition"
+    >
+      <Download className="w-5 h-5" />
+      <span>Descargar CV</span>
+    </a>
+  </div>
+  <PdfViwer client:only="react" />
+</Layout>
